@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body class="container" ng-controller="MainController as vm">
+<form>
+    <div class="row">
+        <div class="form-group col-sm-4">
+            <input type="text" placeholder="First Name" ng-model="vm.firstName" class="form-control"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-sm-4">
+            <input type="text" placeholder="Last Name" ng-model="vm.lastName" class="form-control"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-sm-4">
+            <span ng-bind="vm.fullName()"></span>
+        </div>
+    </div>
+</form>
+</body>
+</html>
