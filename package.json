@@ -8,6 +8,8 @@
     "chai": "^3.3.0",
     "chai-as-promised": "^5.1.0",
     "cucumber": "^0.6.0",
+    "gulp": "^3.9.0",
+    "gulp-protractor": "^1.0.0",
     "jasmine": "^2.3.2",
     "jasmine-core": "^2.3.4",
     "karma": "^0.13.10",

@@ -8,8 +8,9 @@ exports.config = {
         'browserName': 'firefox'
     },
 
-    baseUrl: 'http://localhost:63342/spa-demo/src',
+    baseUrl: 'http://localhost:63342',
 
-    framework: 'cucumber'
+    framework: 'cucumber',
 
+    scriptTimeout: 30000
 };
