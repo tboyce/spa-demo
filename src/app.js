@@ -5,6 +5,6 @@ app.controller('MainController', function() {
     this.lastName = '';
 
     this.fullName = function() {
-        // TODO: implement function
+        return [this.firstName, this.lastName].join(' ');
     }
 });

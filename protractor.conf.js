@@ -5,12 +5,14 @@ exports.config = {
     ],
 
     capabilities: {
-        'browserName': 'firefox'
+        'browserName': 'chrome'
     },
 
     baseUrl: 'http://localhost:63342',
 
     framework: 'cucumber',
 
-    scriptTimeout: 30000
+    onPrepare: function() {
+        return browser.get('http://localhost:63342/spa-demo/src/');
+    }
 };

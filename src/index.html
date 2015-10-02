@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title></title>
@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="app.css">
 </head>
-<body class="container" ng-controller="MainController as vm">
-<form>
+<body ng-app="app" class="container">
+<form ng-controller="MainController as vm">
     <div class="row">
         <div class="form-group col-sm-4">
             <input type="text" placeholder="First Name" ng-model="vm.firstName" class="form-control"/>

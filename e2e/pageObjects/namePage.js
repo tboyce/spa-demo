@@ -1,8 +1,5 @@
 module.exports = {
-    load: function () {
-        return browser.get('spa-demo/src/#/');
-    },
-    firstName: element(by.model('vm.firstName')),
-    lastName: element(by.model('vm.lastName')),
-    fullName: element(by.binding('vm.fullName()')).getText()
+    firstName: element(By.model('vm.firstName')),
+    lastName: element(By.model('vm.lastName')),
+    fullName: element(By.binding('vm.fullName()')).getText()
 };
